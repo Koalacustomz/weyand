@@ -1,11 +1,11 @@
 window.onload = (event) => {
-    load = document.getElementById('loadinganim');
-    content = document.getElementById('main-content');
-    navbar = document.getElementById('navbar');
-    slider = document.getElementById('slider');
-    text1 = document.getElementById('text1');
-    text2 = document.getElementById('text2');
-    text3 = document.getElementById('text3');
+    load = document.getElementsByClassName('loadinganim');
+    content = document.getElementsByClassName('main-content');
+    navbar = document.getElementsByClassName('navbar');
+    slider = document.getElementsByClassName('slider');
+    text1 = document.getElementsByClassName('text1');
+    text2 = document.getElementsByClassName('text2');
+    text3 = document.getElementsByClassName('text3');
 
     setTimeout(function(){
         load.style.display = 'none';
@@ -23,7 +23,7 @@ window.onload = (event) => {
   };
 
   window.addEventListener("scroll", function() {
-    var elementTarget = document.getElementById("slider");
+    var elementTarget = document.getElementsByClassName("slider");
     if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
         text1.style.opacity = '1';
         text1.style.left = '0';
@@ -35,12 +35,12 @@ window.onload = (event) => {
   });
 
   window.addEventListener("scroll", function() {
-    var elementTarget = document.getElementById("text3");
+    var elementTarget = document.getElementsByClassName("text3");
 
-    service = document.getElementById('serivce-item');
-    service2 = document.getElementById('serivce-item2');
-    service3 = document.getElementById('serivce-item3');
-    service4 = document.getElementById('serivce-item4');
+    service = document.getElementsByClassName('serivce-item');
+    service2 = document.getElementsByClassName('serivce-item2');
+    service3 = document.getElementsByClassName('serivce-item3');
+    service4 = document.getElementsByClassName('serivce-item4');
     if (window.scrollY > elementTarget.offsetTop) {
         service.style.transition = '0.5s';
         service.style.left = '0';
